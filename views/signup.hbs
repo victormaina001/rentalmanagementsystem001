@@ -1,0 +1,50 @@
+{{> header }}
+<div class="container">
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col-7 image-left">
+            </div>
+            <div class="col-5">
+                <div>
+                    <h1 style="color: red;">{{ title }}</h1>
+
+                    {{#if errors}}
+                    {{#each errors}}
+                    <div class="alert alert-danger">
+                        {{this.msg}}
+                    </div>
+                    {{/each}}
+                    {{/if}}
+
+                </div>
+                <form method="post" action="/api/v1/signup">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:(*)</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address:(*)</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:(*)</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password:(*)</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"
+                            name="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Signup</button>
+                </form>
+                <hr>
+                <div>
+                    <div>Already have an account?<a href="/api/v1/login">Login.</a></div>
+                </div>Return to <a href="/api/v1/home">Home Page</a>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{{> header }}
+<div class="container">
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col-7 image-left">
+
+            </div>
+            <div class="col-5">
+                <h2 class="mb-5">Login</h2>
+                <form method="post" action="/api/v1/login">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:(*)</label>
+                        <input type="username" class="form-control" id="email" name="username" placeholder="Username"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:(*)</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <hr>
+                <div>
+                    <div>Don't have an account?<a href="/api/v1/signup">Create a new account.</a></div>
+                </div>Return to <a href="/api/v1/home">Home Page</a>
+            </div>
+        </div>
+    </div>
+</div>

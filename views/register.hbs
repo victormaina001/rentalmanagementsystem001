@@ -1,0 +1,80 @@
+<h2>Landlord Details</h2>
+<form action="/api/v1/register" method="post" style="border:1px solid #ccc">
+    {{!-- <label for="username">Username:(*)</label>
+    <input type="text" id="username" name="username" placeholder="Your username..">
+    <br> --}}
+
+    <label for="phoneNumber">Phone Number:(*)</label>
+    <input type="number" id="phone" name="phoneNumber" placeholder="Your phone number..">
+    <br /><br />
+    <label for="idNo">ID Number:(*)</label>
+    <input type="number" id="idNo" name="idNo" placeholder="Your ID number..">
+    <br />
+
+    <label for="county">County:(*)</label>
+    <input type="text" id="county" name="county" placeholder="Your county..">
+
+    <label for="country">Country:(*)</label>
+    <input type="text" id="country" name="country" placeholder="Your country..">
+
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+
+    <hr />
+    <h2>Property Details</h2>
+    <label for="propertyName">Property Name:(*)</label>
+    <input type="text" id="propertyName" name="propertyName" placeholder="Your property name..">
+
+    <label for="propertyType">Property Type:(*)</label>
+    <input type="text" id="propertyType" name="propertyType" placeholder="Your property type..">
+
+    <label for="propertyLocation">Property Location:(*)</label>
+    <input type="text" id="propertyLocation" name="propertyLocation" placeholder="Your property location..">
+
+    <label for="roomTypes">Type Of Rooms:(*)</label>
+    <input type="text" id="roomTypes" name="roomTypes" placeholder="Your type of rooms..">
+    <br>
+
+    <label for="w3review">Property Description:(*)</label>
+    <textarea id="description" name="description" rows="4" cols="50">
+    </textarea>
+    <br /><br />
+
+    <label for="rent">Rent:(*)</label>
+    <input type="number" id="rent" name="rent" placeholder="Your rent price..">
+    <br /><br />
+
+    <label for="socialAmenities">Social Amenities</label>
+    <input type="text" id="socialAmenities" name="socialAmenities" placeholder="Your social amenities..">
+
+    <label for="propertyStatus">Property Status:(*)</label>
+    <input type="text" id="propertyStatus" name="propertyStatus" placeholder="Your property status..">
+    <br /><br />
+
+    <label for="leaseStart">Lease Start:(*)</label>
+    <input type="date" id="leaseStart" name="leaseStart">
+    <br /><br />
+
+    <label for="leaseEnd">Lease End:(*)</label>
+    <input type="date" id="leaseEnd" name="leaseEnd">
+    <br /> <br />
+
+    <label for="created_at">Created At:(*)</label>
+    <input type="date" id="created_at" name="created_at">
+
+
+    {{!-- <input type="file" id="myFile" name="filename1">
+    <br />
+
+    <input type="file" id="myFile" name="filename2">
+    <br />
+
+    <input type="file" id="myFile" name="filename3">
+    <br />
+
+    <input type="file" id="myFile" name="filename4">
+    <br /> <br /> --}}
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
