@@ -7,11 +7,11 @@
     "start": "nodemon app.js",
     "dev": "nodemon server"
   },
-  "author": "Felix-mg",
+  "author": "Roctiv",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "bcrypt-nodejs": "^0.0.3",
+    "bcrypt": "",
+    "bcrypt-nodejs": "",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
