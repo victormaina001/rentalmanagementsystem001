@@ -40,12 +40,11 @@ app.use(cookieParser());
 // Session storage in db
 var options = {
     connectionLimit : 100,
-    host            : process.env.DB_HOST,
-    port            : process.env.DB_PORT,
-    user            : process.env.DB_USER,
-    password        : process.env.DB_PASS,
-    database        : process.env.DB_NAME,
-    socketPath      : process.env.DB_SOCKET_PATH
+    host            : process.env.RDS_HOSTNAME,
+    port            : process.env.RDS_PORT,
+    user            : process.env.RDS_USERNAME,
+    password        : process.env.RDS_PASSWORD,
+    database        : process.env.RDS_DB_NAME,
 
 };
 var sessionStore = new MySQLStore(options); 
