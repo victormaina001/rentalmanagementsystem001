@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+   "engines": {
+       "node": ">=14" // intentionally so big version number
+  },
   "scripts": {
     "start": "nodemon app.js",
     "dev": "nodemon server"
+    "requirements-check": "babel-node check-version.js",
+    "postinstall": "npm run requirements-check"
   },
   "author": "",
   "license": "MIT",
