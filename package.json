@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "nodemon app.js",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
     "requirements-check": "babel-node check-version.js",
     "postinstall": "npm run requirements-check"
   },
